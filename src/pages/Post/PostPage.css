@@ -1,0 +1,41 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-content {
+  max-width: 1920px;
+  padding: 11px 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.post-section {
+  margin: 0 auto;
+  width: 720px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 50px;
+}
+
+.section-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-input h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-input .input-name {
+  padding: 12px 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
