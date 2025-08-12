@@ -25,8 +25,8 @@ export default function Postpage() {
               <p>컬러를 선택하거나, 이미지를 선택할 수 있습니다.</p>
             </div>
             <div className="select-btn">
-              <button>컬러</button>
-              <button>이미지</button>
+              <button className="btn">컬러</button>
+              <button className="btn">이미지</button>
             </div>
           </div>
           <div></div>
