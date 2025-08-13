@@ -67,3 +67,31 @@
   border-radius: 12px;
   padding: 14px 24px;
 }
+
+.selection-boxs {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+}
+
+.color-box {
+  width: 168px;
+  height: 168px;
+  border-radius: 8%;
+}
+
+.begiebox {
+  background-color: #ffe2ad;
+}
+
+.purplebox {
+  background-color: #ecd9ff;
+}
+
+.bluebox {
+  background-color: #b1e4ff;
+}
+
+.greenbox {
+  background-color: #d0f5c3;
+}
