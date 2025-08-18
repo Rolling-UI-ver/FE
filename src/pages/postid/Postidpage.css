@@ -3,10 +3,6 @@
   box-sizing: border-box;
 }
 
-body {
-  background-color: bisque;
-}
-
 .main-header {
   max-width: 1920px;
   height: 68px;
@@ -46,7 +42,6 @@ body {
   height: 28px;
   border: 1.4px solid #ffffff;
   border-radius: 140px;
-  background-color: black;
   margin-left: -8px;
 }
 
@@ -120,6 +115,7 @@ body {
   display: flex;
   flex-direction: column;
   gap: 6px;
+  align-items: flex-start;
 }
 
 .card-sender {
