@@ -3,7 +3,6 @@ import mockRecipients from './mockRecipients';
 import arrow from '../../assets/images/arrow-down.png';
 import reactionImg from '../../assets/images/reactionimg.png';
 import shareImg from '../../assets/images/shareimg.png';
-import './Postidpage.css';
 
 export default function PostidPage() {
   const recipient = mockRecipients.find((r) => r.id === 1);
@@ -28,86 +27,126 @@ export default function PostidPage() {
   return (
     <>
       <header>
-        <div className="max-w-[1920px] px-[360px] py-[11px] flex justify-between items-center mb-[60px] bg-[#ffffff]">
+        <div className="max-w-[1920px] px-[360px] py-[11px] flex justify-between items-center mb-[60px] bg-white">
           <div>Rolling</div>
-          <button></button>
+          <button />
         </div>
       </header>
+
       <main>
-        <div className="main-header">
-          <div className="header-contents">
-            <div className="post-name">To. {name}</div>
-            <div className="header-content">
-              <div className="proflies-content">
-                <div className="proflies">
+        <div className="max-w-[1920px] h-[68px] border-t border-[#ededed] bg-white">
+          <div className="py-[13px] px-[360px] flex justify-between">
+            <div className="text-[24px] font-bold">To. {name}</div>
+
+            <div className="flex gap-[28px]">
+              <div className="flex items-center gap-[11px]">
+                <div className="flex items-center">
                   {recentMessages.map((r) => (
                     <div
-                      className="proflie"
                       key={r.id}
-                      style={{ backgroundImage: `url(${r.profileImageURL})` }}
-                    ></div>
+                      className="w-[28px] h-[28px] border-[1.4px] border-white rounded-full first:ml-0 bg-black bg-center bg-cover bg-no-repeat"
+                      style={{
+                        backgroundImage: `url(${r.profileImageURL})`,
+                        marginLeft: '-8px',
+                      }}
+                    />
                   ))}
-                  <div className="proflie rest-count">+{messageCount}</div>
+                  <div
+                    className="w-[28px] h-[28px] -ml-2 first:ml-0 rounded-full flex items-center justify-center bg-white border border-[#e3e3e3] text-[12px]"
+                    style={{
+                      marginLeft: '-8px',
+                    }}
+                  >
+                    +{messageCount}
+                  </div>
                 </div>
-                <div className="message-counts">
-                  <span>{messageCount}</span>명이 작성했어요!
+
+                <div className="text-black">
+                  <span className="font-bold">{messageCount}</span>
+                  명이 작성했어요!
                 </div>
               </div>
-              <div className="btn-contents">
-                <div className="btn-reaction">
-                  <div className="message-reactions">
-                    {topReactions.map((r) => (
-                      <div className="message-reaction" key={topReactions.id}>
-                        <div className="reaction">
-                          <div className="reaction-emotion">{r.emoji}</div>
-                          <div className="reaction-count">{r.count}</div>
-                        </div>
+              <div className="flex gap-2">
+                <div className="flex gap-2">
+                  <div className="flex gap-2">
+                    <div className="flex gap-2">
+                      <div className="flex gap-2">
+                        {topReactions.map((r) => (
+                          <div
+                            key={r.id}
+                            className="px-3 py-2 rounded-full bg-black/50"
+                          >
+                            <div className="flex items-center gap-1 text-white leading-none font-semibold">
+                              <span className="text-[18px] leading-none">
+                                {r.emoji}
+                              </span>
+                              <span className="text-[14px] leading-none font-variant-tabular">
+                                {r.count}
+                              </span>
+                            </div>
+                          </div>
+                        ))}
                       </div>
-                    ))}
-                  </div>
-                  <button className="reaction-list">
-                    <img src={arrow} alt="아래화살표" />
-                  </button>
-                </div>
-                <div className="btn-content">
-                  <button className="reaction-add">
-                    <div className="reaction-add-content">
-                      <img
-                        src={reactionImg}
-                        alt="이모티콘 이미지"
-                        className="reaction-img"
-                      />{' '}
-                      추가
+                      <button className="flex items-center justify-center w-9 h-9">
+                        <img
+                          src={arrow}
+                          alt="아래화살표"
+                          className="w-3 h-[6px]"
+                        />
+                      </button>
                     </div>
-                  </button>
-                  <div className="rectangle"></div>
-                  <button className="url">
-                    <img src={shareImg} alt="공유이미지" />
-                  </button>
+                  </div>
+                  <div className="flex items-center gap-[13px]">
+                    <button className="px-4 py-[6px] rounded-md border border-[#cccccc]">
+                      <div className="flex items-center gap-1">
+                        <img
+                          src={reactionImg}
+                          alt="이모티콘 이미지"
+                          className="w-[21px] h-[21px]"
+                        />
+                        추가
+                      </div>
+                    </button>
+                    <div className="w-px h-7 bg-[#eeeeee]" />
+                    <button className="px-4 py-[6px] rounded-md border border-[#cccccc]">
+                      <img
+                        src={shareImg}
+                        alt="공유이미지"
+                        className="w-[21px] h-[21px]"
+                      />
+                    </button>
+                  </div>
                 </div>
               </div>
             </div>
           </div>
         </div>
-        <div className="main-contents">
+        <div className="py-[100px] px-[400px] flex gap-5">
           {recentMessages.map((msg) => (
-            <div key={msg.id} className="card">
-              <div className="card-head">
+            <div
+              key={msg.id}
+              className="w-[384px] h-[280px] rounded-2xl bg-white"
+            >
+              <div className="px-6 py-7 flex gap-[14px]">
                 <div
-                  className="card-proplie"
+                  className="w-14 h-14 border border-[#eeeeee] rounded-full bg-center bg-cover bg-no-repeat"
                   style={{ backgroundImage: `url(${msg.profileImageURL})` }}
-                ></div>
-                <div className="card-contents">
-                  <div className="card-sender">
-                    From. <span>{msg.sender}</span>
+                />
+                <div className="flex flex-col gap-[6px] items-start">
+                  <div className="text-[20px]">
+                    From. <span className="font-bold">{msg.sender}</span>
                   </div>
-                  <div className="card-relationship">{msg.relationship}</div>
+                  <span className="inline-flex self-start px-2 rounded bg-[#f8f0ff] text-[14px] leading-[1.4]">
+                    {msg.relationship}
+                  </span>
                 </div>
               </div>
-              <div className="card-body">
-                <div>{msg.content}</div>
+              <div className="w-[336px] h-[106px] px-6 py-3 text-[18px] text-[#4a4a4a] border-t border-[#eeeeee]">
+                {msg.content}
               </div>
-              <div className="card-footer">{formatDate(msg.createdAt)}</div>
+              <div className="px-6 py-3 text-[12px] text-[#999999]">
+                {formatDate(msg.createdAt)}
+              </div>
             </div>
           ))}
         </div>
