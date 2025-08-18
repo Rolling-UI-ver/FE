@@ -49,6 +49,28 @@
   margin-left: 0;
 }
 
+.rest-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #e3e3e3;
+  font-size: 12px;
+}
+
+.reaction-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.reaction-list img {
+  width: 12px;
+  height: 6px;
+}
+
 .message-counts span {
   font-weight: bold;
 }
@@ -85,10 +107,50 @@
   height: 20px;
 }
 
+.btn-content {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.reaction-add {
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+}
+
+.reaction-add-content {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.reaction-img {
+  width: 21px;
+  height: 21px;
+}
+
+.rectangle {
+  width: 1px;
+  height: 28px;
+  background-color: #eeeeee;
+}
+
 .main-contents {
   padding: 100px 400px;
   display: flex;
   gap: 20px;
+}
+
+.url {
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+}
+
+.url img {
+  width: 21px;
+  height: 21px;
 }
 
 .card {

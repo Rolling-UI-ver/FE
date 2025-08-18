@@ -1,5 +1,8 @@
 import { useEffect } from 'react';
 import mockRecipients from './mockRecipients';
+import arrow from '../../assets/images/arrow-down.png';
+import reactionImg from '../../assets/images/reactionimg.png';
+import shareImg from '../../assets/images/shareimg.png';
 import './Postidpage.css';
 
 export default function PostidPage() {
@@ -13,6 +16,14 @@ export default function PostidPage() {
       document.body.style.backgroundColor = '';
     };
   }, [backgroundColor]);
+
+  function formatDate(isoString) {
+    const d = new Date(isoString);
+    const year = d.getFullYear();
+    const month = String(d.getMonth() + 1).padStart(2, '0');
+    const day = String(d.getDate()).padStart(2, '0');
+    return `${year}.${month}.${day}`;
+  }
 
   return (
     <>
@@ -36,7 +47,7 @@ export default function PostidPage() {
                       style={{ backgroundImage: `url(${r.profileImageURL})` }}
                     ></div>
                   ))}
-                  <div className="proflie rest-count"></div>
+                  <div className="proflie rest-count">+{messageCount}</div>
                 </div>
                 <div className="message-counts">
                   <span>{messageCount}</span>명이 작성했어요!
@@ -54,9 +65,26 @@ export default function PostidPage() {
                       </div>
                     ))}
                   </div>
-                  <div className="reaction-add"></div>
+                  <button className="reaction-list">
+                    <img src={arrow} alt="아래화살표" />
+                  </button>
                 </div>
-                <div className="btn-content"></div>
+                <div className="btn-content">
+                  <button className="reaction-add">
+                    <div className="reaction-add-content">
+                      <img
+                        src={reactionImg}
+                        alt="이모티콘 이미지"
+                        className="reaction-img"
+                      />{' '}
+                      추가
+                    </div>
+                  </button>
+                  <div className="rectangle"></div>
+                  <button className="url">
+                    <img src={shareImg} alt="공유이미지" />
+                  </button>
+                </div>
               </div>
             </div>
           </div>
@@ -79,7 +107,7 @@ export default function PostidPage() {
               <div className="card-body">
                 <div>{msg.content}</div>
               </div>
-              <div className="card-footer">{msg.createdAt}</div>
+              <div className="card-footer">{formatDate(msg.createdAt)}</div>
             </div>
           ))}
         </div>
