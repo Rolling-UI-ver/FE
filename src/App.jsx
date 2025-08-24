@@ -1,7 +1,16 @@
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import HomePage from './pages/HomePage.jsx';
+import ListPage from './pages/ListPage.jsx';
 import "./App.css";
 
 function App() {
-  return <></>;
+  return (
+    <Routes>
+      <Route path='/' element={<HomePage />} />
+      <Route path='/listpage' element={<ListPage />} />
+    </Routes>
+  );
 }
 
 export default App;
