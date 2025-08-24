@@ -1,0 +1,97 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.header-content {
+  max-width: 1920px;
+  padding: 11px 360px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 60px;
+}
+
+.post-section {
+  margin: 0 auto;
+  width: 720px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.section-input {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.section-input h1 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.section-input .input-name {
+  padding: 12px 16px;
+  border: 1px solid #d9d9d9;
+  border-radius: 8px;
+}
+
+.backgroud-description h2 {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.backgroud-description p {
+  color: #555555;
+}
+
+.select-btn {
+  margin-top: 40px;
+}
+
+.btn {
+  width: 122px;
+  height: 40px;
+  padding: 7px 16px;
+  border-radius: 6px;
+}
+
+.create-btn {
+  width: 100%;
+  height: 56px;
+  color: white;
+  background-color: #9935ff;
+  border-radius: 12px;
+  padding: 14px 24px;
+}
+
+.selection-boxs {
+  margin-top: 40px;
+  display: flex;
+  gap: 16px;
+}
+
+.color-box {
+  width: 168px;
+  height: 168px;
+  border-radius: 8%;
+}
+
+.begiebox {
+  background-color: #ffe2ad;
+}
+
+.purplebox {
+  background-color: #ecd9ff;
+}
+
+.bluebox {
+  background-color: #b1e4ff;
+}
+
+.greenbox {
+  background-color: #d0f5c3;
+}

@@ -1,0 +1,211 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.main-header {
+  max-width: 1920px;
+  height: 68px;
+  border-top: 1px solid #ededed;
+  background-color: #ffffff;
+}
+
+.header-contents {
+  padding: 13px 360px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.post-name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.header-content {
+  display: flex;
+  gap: 28px;
+}
+
+.proflies-content {
+  display: flex;
+  gap: 11px;
+  align-items: center;
+}
+
+.proflies {
+  display: flex;
+  align-items: center;
+}
+
+.proflie {
+  width: 28px;
+  height: 28px;
+  border: 1.4px solid #ffffff;
+  border-radius: 140px;
+  margin-left: -8px;
+}
+
+.proflie:first-child {
+  margin-left: 0;
+}
+
+.rest-count {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border: 1px solid #e3e3e3;
+  font-size: 12px;
+}
+
+.reaction-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+}
+
+.reaction-list img {
+  width: 12px;
+  height: 6px;
+}
+
+.message-counts span {
+  font-weight: bold;
+}
+
+.btn-contents {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-reaction {
+  display: flex;
+  gap: 2px;
+}
+
+.message-reactions {
+  display: flex;
+  gap: 8px;
+}
+
+.message-reaction {
+  padding: 8px 12px;
+  border-radius: 32px;
+  background-color: rgba(0, 0, 0, 0.54);
+}
+
+.reaction {
+  display: flex;
+  gap: 2px;
+  color: #ffffff;
+}
+
+.reaction-emotion {
+  width: 20px;
+  height: 20px;
+}
+
+.btn-content {
+  display: flex;
+  gap: 13px;
+  align-items: center;
+}
+
+.reaction-add {
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+}
+
+.reaction-add-content {
+  display: flex;
+  gap: 4px;
+  align-items: center;
+}
+
+.reaction-img {
+  width: 21px;
+  height: 21px;
+}
+
+.rectangle {
+  width: 1px;
+  height: 28px;
+  background-color: #eeeeee;
+}
+
+.main-contents {
+  padding: 100px 400px;
+  display: flex;
+  gap: 20px;
+}
+
+.url {
+  padding: 6px 16px;
+  border-radius: 6px;
+  border: 1px solid #cccccc;
+}
+
+.url img {
+  width: 21px;
+  height: 21px;
+}
+
+.card {
+  width: 384px;
+  height: 280px;
+  border-radius: 16px;
+  background-color: #ffffff;
+}
+
+.card-head {
+  padding: 28px 24px;
+  display: flex;
+  gap: 14px;
+}
+
+.card-proplie {
+  width: 56px;
+  height: 56px;
+  border: 1px solid #eeeeee;
+  border-radius: 100px;
+}
+
+.card-contents {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  align-items: flex-start;
+}
+
+.card-sender {
+  font-size: 20px;
+}
+
+.card-sender span {
+  font-weight: bold;
+}
+
+.card-relationship {
+  padding: 0 8px;
+  border-radius: 4px;
+  background-color: #f8f0ff;
+  font-size: 14px;
+}
+
+.card-body {
+  width: 336px;
+  height: 106px;
+  padding: 12px 24px;
+  font-size: 18px;
+  color: #4a4a4a;
+  border-top: 1px solid #eeeeee;
+}
+
+.card-footer {
+  padding: 12px 24px;
+  font-size: 12px;
+  color: #999999;
+}
