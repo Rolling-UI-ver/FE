@@ -11,7 +11,7 @@ export default function Postpage() {
           <button>버튼</button>
         </div>
       </header>
-      <main>
+      <main className="px-[480px]">
         <div className="mx-auto w-[720px] flex flex-col gap-[60px]">
           <Postname />
           <BackgroundSelect />
