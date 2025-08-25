@@ -1,1 +1,10 @@
+
 @import "tailwindcss";
+
+
+@source "./index.html";
+@source "./src/**/*.{js,jsx,ts,tsx}";
+
+
+:root { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, "Noto Sans KR", Helvetica, Arial; }
+html, body, #root { height: 100%; }
